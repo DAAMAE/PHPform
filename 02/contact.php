@@ -12,7 +12,7 @@
     <tr>
         <th>姓　：</th>
 
-        <td><input autofocus="text" name="name1" size="20">[必須]</td>
+        <td><input type="text" name="name1" size="20">[必須]</td>
     </tr>
     <tr>
         <th>名　：</th>
@@ -20,9 +20,9 @@
     </tr>
     <tr>
         <th>性別 ：</th>
-    <td><input type="radio" name="性別" value="男" /> 男　
-        <input type="radio" name="性別" value="女" /> 女
-        <input type="radio" name="性別" value="不明" />不明 </td>
+    <td><input type="radio" name="sex" value="男" /> 男　
+        <input type="radio" name="sex" value="女" /> 女
+        <input type="radio" name="sex" value="不明" />不明 </td>
     </tr>
     <tr>
     <th>住所 ：</th>
@@ -30,7 +30,9 @@
     </tr>
     <tr>
     <th>電話番号 ：</th>
-        <td><input size="5" type="text" name="number1"> - <input size="5" type="text" name="number2"> - <input size="5" type="text" name="number3"></th>
+            <td><input size="5" type="text" onKeyup="this.value=this.value.replace(/[^0-9]+/i,'')" name="number1">     <!--半角数字のみ入力可-->
+                - <input size="5" type="text" onKeyup="this.value=this.value.replace(/[^0-9]+/i,'')" name="number2">
+                    - <input size="5" type="text" onKeyup="this.value=this.value.replace(/[^0-9]+/i,'')" name="number3"></td>
     </tr>
     <tr>
     <th>メールアドレス　：</th>
