@@ -5,7 +5,7 @@
 
     <title>お問い合わせ</title>
     <center>
-    <font size="+2"><h1>お問い合わせ</h1></font>
+    <h1>お問い合わせ</h1>
     </center>
     <table class="formTable">
     <tr>

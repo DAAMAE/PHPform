@@ -16,7 +16,7 @@
 <tr>
 <th>性別　：</th>
 <td>
-    <?php echo $_POST["性別"]."<br>";?>
+    <?php echo $_POST["sex"]."<br>";?>
 </td>
 </tr>
 
@@ -60,7 +60,7 @@
     <?php    echo $_POST["feelings"]."<br>";?>
 </td>
 </tr>
-</div>
+    </div>
 
 </body>
 </table>
