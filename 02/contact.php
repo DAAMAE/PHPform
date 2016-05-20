@@ -3,18 +3,16 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <form action="result.php" method="post">
 
-
-
     <title>お問い合わせ</title>
 
-    
     <center>
     <font size="+2"><b>お問い合わせ</b></font>
     </center>
     <table class="formTable">
     <tr>
         <th>姓　：</th>
-        <td><input type="text" name="name1" size="20">[必須]</td>
+
+        <td><input autofocus="text" name="name1" size="20">[必須]</td>
     </tr>
     <tr>
         <th>名　：</th>

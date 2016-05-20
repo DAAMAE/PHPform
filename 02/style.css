@@ -28,3 +28,7 @@ font-size:12px;
 resize:none;        /*質問内容　テキストエリア固定*/
 
 }
+
+body > div{
+    background: #eeeeee;
+}
