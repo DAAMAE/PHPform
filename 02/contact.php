@@ -1,9 +1,9 @@
 <body>
 
-    <link rel=stylesheet type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <form action="result.php" method="post">
 
-<div id="formTable">
+
 
     <title>お問い合わせ</title>
 
@@ -67,5 +67,5 @@
 
 </form>
 
-</div>
+
 </body>
