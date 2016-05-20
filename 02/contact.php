@@ -4,15 +4,13 @@
     <form action="result.php" method="post">
 
     <title>お問い合わせ</title>
-
     <center>
-    <font size="+2"><b>お問い合わせ</b></font>
+    <font size="+2"><h1>お問い合わせ</h1></font>
     </center>
     <table class="formTable">
     <tr>
         <th>姓　：</th>
-
-        <td><input type="text" name="name1" size="20">[必須]</td>
+        <td><input type="text" name="name1" size="20" >[必須]</td>
     </tr>
     <tr>
         <th>名　：</th>
@@ -24,10 +22,12 @@
         <input type="radio" name="sex" value="女" /> 女
         <input type="radio" name="sex" value="不明" />不明 </td>
     </tr>
+    <fieldset>
     <tr>
     <th>住所 ：</th>
         <td><input type="text" name="Address" size="50"></td>
     </tr>
+    </fieldset>
     <tr>
     <th>電話番号 ：</th>
             <td><input size="5" type="text" onKeyup="this.value=this.value.replace(/[^0-9]+/i,'')" name="number1">     <!--半角数字のみ入力可-->
@@ -36,7 +36,7 @@
     </tr>
     <tr>
     <th>メールアドレス　：</th>
-        <td><input size="20" type="text" name="mail">@<input size="15" type="text" name="domain"></td>
+        <td><input size="20" type="text" name="mail"> @<input size="15" type="text" name="domain"></td>
     </tr>
     <tr>
     <th>どこで知ったか　：</th>
@@ -58,9 +58,7 @@
     </tr>
     <tr>
     <th>質問内容　：</th>
-
         <td><textarea name="feelings" rows="5" cols="20"></textarea></td>
-
     </tr>
     </table>
 </table>
