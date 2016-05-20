@@ -4,11 +4,13 @@
     <form action="result.php" method="post">
 
 <div id="formTable">
+
     <title>お問い合わせ</title>
+
     <link rel="stylesheet" type="text/css" href="style.css">
-
+    <center>
     <font size="+2"><b>お問い合わせ</b></font>
-
+    </center>
     <table class="formTable">
     <tr>
         <th>姓　：</th>
@@ -62,6 +64,7 @@
     <p align="center">
         <input type="submit" value="　　送信　　">　　　<input type="reset" value="リセット">
     </p>
+
 </form>
 
 </div>
