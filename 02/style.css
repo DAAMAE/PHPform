@@ -6,7 +6,7 @@
 	font-size:500px;
 }
 table.formTable{
-	width:570px;
+	width:600px;
 	margin:0 auto;
 	border-collapse:collapse; /*セルのボーダーの表示の仕方を指定する*/
 }
@@ -19,4 +19,12 @@ table.formTable th{
 	font-weight:normal; /*フォント太さ*/
 	background:#E4D7EA;
 	text-align:left; /* 行揃えの位置・均等割付を指定する 左*/
+}
+textarea{
+
+width:400px;
+height:150px;
+font-size:12px;
+resize:none;
+
 }

@@ -58,8 +58,11 @@
     </tr>
     <tr>
     <th>質問内容　：</th>
+
         <td><textarea name="feelings" rows="5" cols="20"></textarea></td>
+    
     </tr>
+    </table>
 </table>
     <p align="center">
         <input type="submit" value="　　送信　　">　　　<input type="reset" value="リセット">
