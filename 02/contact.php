@@ -7,7 +7,7 @@
 
     <title>お問い合わせ</title>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+    
     <center>
     <font size="+2"><b>お問い合わせ</b></font>
     </center>
@@ -60,7 +60,7 @@
     <th>質問内容　：</th>
 
         <td><textarea name="feelings" rows="5" cols="20"></textarea></td>
-    
+
     </tr>
     </table>
 </table>

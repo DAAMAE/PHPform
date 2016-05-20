@@ -16,7 +16,7 @@ table.formTable td,table.formTable th{
 }
 table.formTable th{
 	width:500px;
-	font-weight:normal; /*フォント太さ*/
+	font-weight:bold; /*フォント太さ(左側太字に変更)*/
 	background:#E4D7EA;
 	text-align:left; /* 行揃えの位置・均等割付を指定する 左*/
 }
@@ -25,6 +25,6 @@ textarea{
 width:400px;
 height:150px;
 font-size:12px;
-resize:none;
+resize:none;        /*質問内容　テキストエリア固定*/
 
 }
