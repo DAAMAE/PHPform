@@ -1,9 +1,11 @@
 
 <body>
 <form>
-
+    
+<head>
 <link href="style.css" rel="stylesheet" type="text/css" >
 <table crass="formTable">
+</head>
 
 <title>送信内容の確認</title>
 <tr>
@@ -54,9 +56,6 @@
     <?php echo $_POST["feelings"]."<br>";?>
 </td>
 </tr>
-
-<input type="submit" value="　　戻る　　">　
-
 
 </table>
 </body>
