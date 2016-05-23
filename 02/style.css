@@ -26,7 +26,6 @@ table.formTable th{
 	display: table-cell;  /*インライン要素の上下中央寄せ*/
 	vertical-align: middle;
 
-
 }
 textarea{
 
