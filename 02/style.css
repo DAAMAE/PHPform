@@ -5,21 +5,28 @@
 	color:#555;
 	line-height:800px; /* 行の高さを指定する*/
 	font-size:500px;
+
 }
 table.formTable{                /*formTable外枠全部*/
 	width:600px;
 	margin:0 auto;              /*左右等分のmarginが算出され、ボックスは中央に配置*/
 	border-collapse:collapse; /*セルのボーダーの表示の仕方を指定する*/
+
 }
 table.formTable td,table.formTable th{
 	border:1px solid #000000; /*枠線色*/
 	padding:15px; /*パディングに関する指定をまとめて行う 領域内のｽﾍﾟｰｽ*/
+
 }
 table.formTable th{
 	width:500px;
 	font-weight:bold; /*フォント太さ(左側太字に変更)*/
 	background:#E4D7EA;
 	text-align:left; /* 行揃えの位置・均等割付を指定する 左*/
+	display: table-cell;  /*インライン要素の上下中央寄せ*/
+	vertical-align: middle;
+
+
 }
 textarea{
 
@@ -27,5 +34,5 @@ width:400px;
 height:150px;
 font-size:12px;
 resize:none;        /*質問内容　テキストエリア固定*/
-
+border-radius: 5px;
 }
