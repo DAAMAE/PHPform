@@ -1,11 +1,12 @@
 <body>
 
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="reset.css">
     <form action="result.php" method="post">
 
     <title>お問い合わせ</title>
     <center>
-    <h1>お問い合わせ</h1>
+    <FONT size="6">お問い合わせ</FONT>
     </center>
     <table class="formTable">
     <tr>
@@ -67,6 +68,4 @@
     </p>
 
 </form>
-
-
 </body>
