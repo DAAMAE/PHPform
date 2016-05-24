@@ -4,46 +4,26 @@
     <link rel="stylesheet" type="text/css" href="reset.css">
     <form action="result.php" method="post">
 
+
     <?php
     $name1="";
     if( !empty($_POST["name1"])) {$name1 = $_POST["name1"];}/*name1初期化　$_POSTが空でない時に$_POST name1値を代入*/
     $name2="";
     if( !empty($_POST["name2"])) {$name2 = $_POST["name2"];}
-    $sex="";
-    if( !empty($_POST["sex"])) {$name2 = $_POST["sex"];}
-    $Address="";
-    if( !empty($_POST["Address"])) {$name2 = $_POST["Address"];}
-    $number1="";
-    if( !empty($_POST["number1"])) {$name2 = $_POST["number1"];}
-    $number2="";
-    if( !empty($_POST["number2"])) {$name2 = $_POST["number2"];}
-    $number3="";
-    if( !empty($_POST["number3"])) {$name2 = $_POST["number3"];}
-    $mail="";
-    if( !empty($_POST["mail"])) {$name2 = $_POST["mail"];}
-    $domain="";
-    if( !empty($_POST["domain"])) {$name2 = $_POST["domain"];}
-    $point="";
-    if( !empty($_POST["point"])) {$name2 = $_POST["point"];}
-    $question="";
-    if( !empty($_POST["question"])) {$name2 = $_POST["question"];}
-    $feelings="";
-    if( !empty($_POST["feelings"])) {$name2 = $_POST["feelings"];}
       ?>
-
 
     <title>お問い合わせ</title>
 
     <center>
-    <FONT size="6">お問い合わせ</FONT>
+    <font size="6">お問い合わせ</font>
     </center>
 
     <table class="formTable">
-    <tr>
-        <th>姓　：</th>
-        <td><input type="text" name="name1" size="20" value="<?php echo $name1;?>" >[必須]</td> <!--echo表示-->
-    </tr>
-    <tr>
+<tr>
+<th>姓　：</th>
+<td><input type="text" name="name1" size="20" value="<?php echo $name1;?>" >[必須]</td> <!--echo表示-->
+</tr>
+<tr>
         <th>名　：</th>
         <td><input type="text" name="name2" size="20" value="<?php echo $name2;?>" >[必須]</td>
     </tr>
@@ -61,9 +41,9 @@
     </fieldset>
     <tr>
     <th>電話番号 ：</th>
-            <td><input size="5" type="text" onKeyup="this.value=this.value.replace(/[^0-9]+/i,'')" name="number1">     <!--半角数字のみ入力可-->
-                - <input size="5" type="text" onKeyup="this.value=this.value.replace(/[^0-9]+/i,'')" name="number2">
-                    - <input size="5" type="text" onKeyup="this.value=this.value.replace(/[^0-9]+/i,'')" name="number3"></td>
+            <td><input size="5" type="text" onKeyup="this.value=this.value.replace(/[^0-9]+/i,'')" name="number1" >     <!--半角数字のみ入力可-->
+                - <input size="5" type="text" onKeyup="this.value=this.value.replace(/[^0-9]+/i,'')" name="number2" >
+                    - <input size="5" type="text" onKeyup="this.value=this.value.replace(/[^0-9]+/i,'')" name="number3" ></td>
     </tr>
     <tr>
     <th>メールアドレス　：</th>
