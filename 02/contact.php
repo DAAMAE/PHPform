@@ -4,6 +4,34 @@
     <link rel="stylesheet" type="text/css" href="reset.css">
     <form action="result.php" method="post">
 
+    <?php
+    $name1="";
+    if( !empty($_POST["name1"])) {$name1 = $_POST["name1"];}/*name1初期化　$_POSTが空でない時に$_POST name1値を代入*/
+    $name2="";
+    if( !empty($_POST["name2"])) {$name2 = $_POST["name2"];}
+    $sex="";
+    if( !empty($_POST["sex"])) {$name2 = $_POST["sex"];}
+    $Address="";
+    if( !empty($_POST["Address"])) {$name2 = $_POST["Address"];}
+    $number1="";
+    if( !empty($_POST["number1"])) {$name2 = $_POST["number1"];}
+    $number2="";
+    if( !empty($_POST["number2"])) {$name2 = $_POST["number2"];}
+    $number3="";
+    if( !empty($_POST["number3"])) {$name2 = $_POST["number3"];}
+    $mail="";
+    if( !empty($_POST["mail"])) {$name2 = $_POST["mail"];}
+    $domain="";
+    if( !empty($_POST["domain"])) {$name2 = $_POST["domain"];}
+    $point="";
+    if( !empty($_POST["point"])) {$name2 = $_POST["point"];}
+    $question="";
+    if( !empty($_POST["question"])) {$name2 = $_POST["question"];}
+    $feelings="";
+    if( !empty($_POST["feelings"])) {$name2 = $_POST["feelings"];}
+      ?>
+
+
     <title>お問い合わせ</title>
 
     <center>
@@ -13,15 +41,15 @@
     <table class="formTable">
     <tr>
         <th>姓　：</th>
-        <td><input type="text" name="name1" size="20" >[必須]</td>
+        <td><input type="text" name="name1" size="20" value="<?php echo $name1;?>" >[必須]</td> <!--echo表示-->
     </tr>
     <tr>
         <th>名　：</th>
-        <td><input type="text" name="name2" size="20">[必須]</td>
+        <td><input type="text" name="name2" size="20" value="<?php echo $name2;?>" >[必須]</td>
     </tr>
     <tr>
         <th>性別 ：</th>
-    <td><input type="radio" name="sex" value="男" /> 男　
+    <td><input type="radio" name="sex" value="男"/> 男　
         <input type="radio" name="sex" value="女" /> 女
         <input type="radio" name="sex" value="不明" />不明 </td>
     </tr>

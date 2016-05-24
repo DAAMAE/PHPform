@@ -5,6 +5,20 @@
 <body>
     <link rel="stylesheet" type="text/css" href="style.css" >
     <form action="contact.php" method="post">
+
+<input type="hidden" name="name1" value="<?php echo $_POST["name1"];?>">
+<input type="hidden" name="name2" value="<?php echo $_POST["name2"];?>">
+<input type="hidden" name="sex" value="<?php echo $_POST["sex"];?>">
+<input type="hidden" name="Address" value="<?php echo $_POST["Address"];?>">
+<input type="hidden" name="number1" value="<?php echo $_POST["number1"];?>">
+<input type="hidden" name="number2" value="<?php echo $_POST["number2"];?>">
+<input type="hidden" name="number3" value="<?php echo $_POST["number3"];?>">
+<input type="hidden" name="mail" value="<?php echo $_POST["mail"];?>">
+<input type="hidden" name="domain" value="<?php echo $_POST["domain"];?>">
+<input type="hidden" name="point" value="<?php echo $_POST["point"];?>">
+<input type="hidden" name="question" value="<?php echo $_POST["question"];?>">
+<input type="hidden" name="feelings" value="<?php echo $_POST["feelings"];?>">
+
 <title>送信内容の確認</title>
 <tr>
 <th>名前　：</th>
