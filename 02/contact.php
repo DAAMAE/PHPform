@@ -1,9 +1,9 @@
-<body>
-
+<html>
     <link rel="stylesheet" type="text/css" href="style.css" media="all">
     <link rel="stylesheet" type="text/css" href="reset.css">
     <form action="result.php" method="post">
 
+    <body>
 
     <?php
     $name1="";
@@ -15,17 +15,18 @@
     <title>お問い合わせ</title>
 
     <center>
-    <font size="6">お問い合わせ</font>
+    <font size="6">お問い合わせフォーム</font>
     </center>
+
 
     <table class="formTable">
 <tr>
 <th>姓　：</th>
-<td><input type="text" name="name1" size="20" value="<?php echo $name1;?>" >[必須]</td> <!--echo表示-->
+<td><input type="text" name="name1" size="20" value="<?php echo $name1;?>" ></td> <!--echo表示-->
 </tr>
 <tr>
         <th>名　：</th>
-        <td><input type="text" name="name2" size="20" value="<?php echo $name2;?>" >[必須]</td>
+        <td><input type="text" name="name2" size="20" value="<?php echo $name2;?>" ></td>
     </tr>
     <tr>
         <th>性別 ：</th>
@@ -75,10 +76,10 @@
 
     </tr>
     </table>
-</table>
     <p align="center">
                 <input type="submit" value="　　送信　　">　　　<input type="reset" value="リセット">
     </p>
 
 </form>
 </body>
+</html>
