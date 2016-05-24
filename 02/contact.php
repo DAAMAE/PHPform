@@ -1,13 +1,15 @@
 <body>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css" media="all">
     <link rel="stylesheet" type="text/css" href="reset.css">
     <form action="result.php" method="post">
 
     <title>お問い合わせ</title>
+
     <center>
     <FONT size="6">お問い合わせ</FONT>
     </center>
+
     <table class="formTable">
     <tr>
         <th>姓　：</th>

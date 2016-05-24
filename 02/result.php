@@ -1,18 +1,16 @@
 
-<body>
-<form>
-
-
-<link href="style.css" rel="stylesheet" type="text/css" >
+<head>
 <table crass="formTable">
-
-
+</head>
+<body>
+    <link rel="stylesheet" type="text/css" href="style.css" >
+    <form action="contact.php" method="post">
 <title>送信内容の確認</title>
 <tr>
 <th>名前　：</th>
-<td>
+    <td>
     <?php echo $_POST["name1"] .  " " . $_POST["name2"]."<br>";?>
-</td>
+    </td>
 </tr>
 <tr>
 <th>性別　：</th>
@@ -57,6 +55,6 @@
 </td>
 </tr>
 
+<th><input type="submit" value="　　戻る　　"></th>　　
 </table>
 </body>
-</form>

@@ -1,5 +1,5 @@
 
-#formtable {
+formtable{
 	width:400px;
 	margin:0 auto;
 	color:#555;
@@ -23,15 +23,14 @@ table.formTable th{
 	font-weight:bold; /*フォント太さ(左側太字に変更)*/
 	background:#E4D7EA;
 	text-align:left; /* 行揃えの位置・均等割付を指定する 左*/
-	display: table-cell;  /*インライン要素の上下中央寄せ*/
-	vertical-align: middle;
+	vertical-align: middle;	 /* 縦方向の揃え位置を指定する 中央寄せ」*/
+
 
 }
 textarea{
-
-width:400px;
-height:150px;
-font-size:12px;
-resize:none;        /*質問内容　テキストエリア固定*/
-border-radius: 5px;
+	width:400px;
+	height:150px;
+	font-size:12px;
+	resize:none;        /*質問内容　テキストエリア固定*/
+	border-radius: 5px;
 }
