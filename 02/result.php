@@ -1,15 +1,17 @@
-
-<table crass="formTable">
+<html>
+<head>
 
     <link rel="stylesheet" type="text/css" href="style.css" >
+    <link rel="stylesheet" type="text/css" href="reset.css">
+</head>
+<body>
     <form action="contact.php" method="post">
+    <table crass="formTable">
 
 <input type="hidden" name="name1" value="<?php echo $_POST["name1"];?>">
 <input type="hidden" name="name2" value="<?php echo $_POST["name2"];?>">
 
-
 <title>送信内容の確認</title>
-<body>
 <tr>
 <th>名前　：</th>
     <td>
@@ -62,3 +64,4 @@
 <th><input type="submit" value="　　戻る　　"></th>　　
 </table>
 </body>
+</html>

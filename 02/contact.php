@@ -1,9 +1,10 @@
 <html>
+<head>
     <link rel="stylesheet" type="text/css" href="style.css" media="all">
     <link rel="stylesheet" type="text/css" href="reset.css">
+</head>
+<body>
     <form action="result.php" method="post">
-
-    <body>
 
     <?php
     $name1="";
@@ -66,7 +67,7 @@
         <option value="趣味">趣味</option>
         <option value="最近熱いアニメ">最近熱いアニメ</option>
     </select>
-</td>
+    </td>
     </tr>
     <tr>
 
