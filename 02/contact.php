@@ -90,7 +90,8 @@
 
 </table>
         <p align="center">
-        <input type="submit" value="　　送信　　">　　　<input type="reset" value="リセット">
+            <button class="button1" type="submit">  送信  </button>
+            <button class="button2" type="reset">  リセット  </button>
         </p>
 
 </form>
