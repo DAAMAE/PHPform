@@ -1,6 +1,6 @@
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="reset.css">
 </head>
 <body>
@@ -19,6 +19,11 @@
     if( !empty($_POST["number2"])) {$number2 = $_POST["number2"];}
     $number3="";
     if( !empty($_POST["number3"])) {$number3 = $_POST["number3"];}
+    $mail="";
+    if( !empty($_POST["mail"])) {$mail = $_POST["mail"];}
+    $domain="";
+    if( !empty($_POST["domain"])) {$domain = $_POST["domain"];}
+
       ?>
 
     <title>お問い合わせ</title>
@@ -30,64 +35,63 @@
 
     <table class="formTable">
 <tr>
-<th>姓　：</th>
-<td><input type="text" name="name1" size="20" value="<?php echo $name1;?>" required aria-required="true" ></td> <!--echo表示-->
+        <th>姓　：</th>
+<!--echo表示　required」属性が記述されている入力要素では、空欄のままフォームの [送信] ボタンが押された場合、(一部のブラウザで) エラーメッセージを出すことができる。-->
+        <td><input type="text" name="name1" size="20"  placeholder="アムロ" value="<?php echo $name1;?>" required aria-required="true" ></td> <!--echo表示-->
 </tr>
+<!-- plamceholder 入力ボックスの初期値として薄いグレーの文字を表示する-->
 <tr>
         <th>名　：</th>
-        <td><input type="text" name="name2" size="20" value="<?php echo $name2;?>" required aria-required="true" ></td>
-    </tr>
-    <tr>
+        <td><input type="text" name="name2" size="20" placeholder="レイ" value="<?php echo $name2;?>" required aria-required="true" ></td>
+</tr>
+<tr>
         <th>性別 ：</th>
-    <td><input type="radio" name="sex" value="男" /> 男　
-        <input type="radio" name="sex" value="女"  /> 女
-        <input type="radio" name="sex" value="不明"  />不明 </td>
-    </tr>
-    <fieldset>
-    <tr>
-    <th>住所 ：</th>
-        <td><input type="text" name="Address" size="50" value="<?php echo $Address;?>" required aria-required="true" ></td>
-    </tr>
-    </fieldset>
-    <tr>
-    <th>電話番号 ：</th>
-            <td><input size="5" type="text"  onKeyup="this.value=this.value.replace(/[^0-9]+/i,'')" name="number1" value="<?php echo $number1;?>" >     <!--半角数字のみ入力可-->
-                - <input size="5" type="text" onKeyup="this.value=this.value.replace(/[^0-9]+/i,'')" name="number2" value="<?php echo $number2;?>">
-                    - <input size="5" type="text" onKeyup="this.value=this.value.replace(/[^0-9]+/i,'')" name="number3" value="<?php echo $number3;?>"></td>
-    </tr>
-    <tr>
-    <th>メールアドレス　：</th>
-        <td><input size="20" type="text" name="mail"> @<input size="15" type="text" name="domain"></td>
-    </tr>
-    <tr>
-    <th>どこで知ったか　：</th>
-    <td><input type="radio" value="雑誌・広告" name="point">雑誌・広告
-        <input type="radio" value="ネット" name="point">ネット
-        <input type="radio" value="友人・家族" name="point">友人・家族
-        <input type="radio" value="その他" name="point">その他</td>
-    </tr>
-    <tr>
-    <th>質問カテゴリ　：</th>
-    <td><select name="question">
-        <option value="課題について">課題について</option>
-        <option value="日報の書き方">日報の書き方</option>
-        <option value="メールの書き方">メールの書き方</option>
-        <option value="趣味">趣味</option>
-        <option value="最近熱いアニメ">最近熱いアニメ</option>
-    </select>
-    </td>
-    </tr>
-    <tr>
-
-    <th>質問内容　：</th>
-
+        <td><input type="radio" name="sex" value="男" /> 男　
+            <input type="radio" name="sex" value="女"  /> 女
+            <input type="radio" name="sex" value="不明"  />不明 </td>
+</tr>
+<tr>
+        <th>住所 ：</th>
+        <td><input type="text" name="Address" size="50" placeholder="サイド7" value="<?php echo $Address;?>" required aria-required="true" ></td>
+</tr>
+<tr>
+        <th>電話番号 ：</th>
+        <td><input size="5" type="text"  onKeyup="this.value=this.value.replace(/[^0-9]+/i,'')" name="number1" placeholder="114" value="<?php echo $number1;?>" >     <!--半角数字のみ入力可-->
+            - <input size="5" type="text" onKeyup="this.value=this.value.replace(/[^0-9]+/i,'')" name="number2" placeholder="514" value="<?php echo $number2;?>">
+                - <input size="5" type="text" onKeyup="this.value=this.value.replace(/[^0-9]+/i,'')" name="number3" placeholder="810" value="<?php echo $number3;?>"></td>
+</tr>
+<tr>
+        <th>メールアドレス　：</th>
+        <td><input size="20" type="text" name="mail" required aria-required="true" value="<?php echo $mail;?>">
+             @<input size="15" type="text" name="domain"required aria-required="true" value="<?php echo $domain;?>"></td>
+</tr>
+<tr>
+        <th>どこで知ったか　：</th>
+        <td><input type="radio" value="雑誌・広告" name="point">雑誌・広告
+            <input type="radio" value="ネット" name="point">ネット
+            <input type="radio" value="友人・家族" name="point">友人・家族
+            <input type="radio" value="その他" name="point">その他</td>
+</tr>
+<tr>
+        <th>質問カテゴリ　：</th>
+        <td><select name="question">
+            <option value="課題について">課題について</option>
+            <option value="日報の書き方">日報の書き方</option>
+            <option value="メールの書き方">メールの書き方</option>
+            <option value="趣味">趣味</option>
+            <option value="最近熱いアニメ">最近熱いアニメ</option>
+        </select>
+        </td>
+</tr>
+<tr>
+        <th>質問内容　：</th>
         <td align="center"><textarea name="feelings" rows="5" cols="20"></textarea></td>
+</tr>
 
-    </tr>
-    </table>
-    <p align="center">
-                <input type="submit" value="　　送信　　">　　　<input type="reset" value="リセット">
-    </p>
+</table>
+        <p align="center">
+        <input type="submit" value="　　送信　　">　　　<input type="reset" value="リセット">
+        </p>
 
 </form>
 </body>
