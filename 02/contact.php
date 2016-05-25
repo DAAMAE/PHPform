@@ -11,6 +11,14 @@
     if( !empty($_POST["name1"])) {$name1 = $_POST["name1"];}/*name1初期化　$_POSTが空でない時に$_POST name1値を代入*/
     $name2="";
     if( !empty($_POST["name2"])) {$name2 = $_POST["name2"];}
+    $Address="";
+    if( !empty($_POST["Address"])) {$Address = $_POST["Address"];}
+    $number1="";
+    if( !empty($_POST["number1"])) {$number1 = $_POST["number1"];}
+    $number2="";
+    if( !empty($_POST["number2"])) {$number2 = $_POST["number2"];}
+    $number3="";
+    if( !empty($_POST["number3"])) {$number3 = $_POST["number3"];}
       ?>
 
     <title>お問い合わせ</title>
@@ -23,29 +31,29 @@
     <table class="formTable">
 <tr>
 <th>姓　：</th>
-<td><input type="text" name="name1" size="20" value="<?php echo $name1;?>" ></td> <!--echo表示-->
+<td><input type="text" name="name1" size="20" value="<?php echo $name1;?>" required aria-required="true" ></td> <!--echo表示-->
 </tr>
 <tr>
         <th>名　：</th>
-        <td><input type="text" name="name2" size="20" value="<?php echo $name2;?>" ></td>
+        <td><input type="text" name="name2" size="20" value="<?php echo $name2;?>" required aria-required="true" ></td>
     </tr>
     <tr>
         <th>性別 ：</th>
-    <td><input type="radio" name="sex" value="男"/> 男　
-        <input type="radio" name="sex" value="女" /> 女
-        <input type="radio" name="sex" value="不明" />不明 </td>
+    <td><input type="radio" name="sex" value="男" /> 男　
+        <input type="radio" name="sex" value="女"  /> 女
+        <input type="radio" name="sex" value="不明"  />不明 </td>
     </tr>
     <fieldset>
     <tr>
     <th>住所 ：</th>
-        <td><input type="text" name="Address" size="50"></td>
+        <td><input type="text" name="Address" size="50" value="<?php echo $Address;?>" required aria-required="true" ></td>
     </tr>
     </fieldset>
     <tr>
     <th>電話番号 ：</th>
-            <td><input size="5" type="text" onKeyup="this.value=this.value.replace(/[^0-9]+/i,'')" name="number1" >     <!--半角数字のみ入力可-->
-                - <input size="5" type="text" onKeyup="this.value=this.value.replace(/[^0-9]+/i,'')" name="number2" >
-                    - <input size="5" type="text" onKeyup="this.value=this.value.replace(/[^0-9]+/i,'')" name="number3" ></td>
+            <td><input size="5" type="text"  onKeyup="this.value=this.value.replace(/[^0-9]+/i,'')" name="number1" value="<?php echo $number1;?>" >     <!--半角数字のみ入力可-->
+                - <input size="5" type="text" onKeyup="this.value=this.value.replace(/[^0-9]+/i,'')" name="number2" value="<?php echo $number2;?>">
+                    - <input size="5" type="text" onKeyup="this.value=this.value.replace(/[^0-9]+/i,'')" name="number3" value="<?php echo $number3;?>"></td>
     </tr>
     <tr>
     <th>メールアドレス　：</th>

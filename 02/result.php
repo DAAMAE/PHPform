@@ -10,6 +10,11 @@
 
 <input type="hidden" name="name1" value="<?php echo $_POST["name1"];?>">
 <input type="hidden" name="name2" value="<?php echo $_POST["name2"];?>">
+<input type="hidden" name="Address" value="<?php echo $_POST["Address"];?>">
+<input type="hidden" name="number1" value="<?php echo $_POST["number1"];?>">
+<input type="hidden" name="number2" value="<?php echo $_POST["number2"];?>">
+<input type="hidden" name="number3" value="<?php echo $_POST["number3"];?>">
+
 
 <title>送信内容の確認</title>
 <tr>
