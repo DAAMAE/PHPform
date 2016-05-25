@@ -5,7 +5,7 @@
 </head>
 <body>
     <form action="contact.php" method="post">
-    <table crass="formTable">
+    <table class="formTable">
 
 <input type="hidden" name="name1" value="<?php echo $_POST["name1"];?>">
 <input type="hidden" name="name2" value="<?php echo $_POST["name2"];?>">
@@ -21,7 +21,8 @@
 
 <tr>
     <th>名前　：</th>
-    <td>
+    <td class="name1">
+
     <?php echo $_POST["name1"] .  " " . $_POST["name2"]."<br>";?>
     </td>
 </tr>
@@ -67,7 +68,8 @@
     <?php echo $_POST["feelings"]."<br>";?>
     </td>
 </tr>
-    <th><input type="submit" value="　　戻る　　"></th>　　
+    <center>
+    <input type="submit" value="　　戻る　　"></center>
 
 </table>
 </body>
