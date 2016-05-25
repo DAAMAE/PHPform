@@ -15,6 +15,7 @@
 <input type="hidden" name="number3" value="<?php echo $_POST["number3"];?>">
 <input type="hidden" name="mail" value="<?php echo $_POST["mail"];?>">
 <input type="hidden" name="domain" value="<?php echo $_POST["domain"];?>">
+<input type="hidden" name="feelings" value="<?php echo $_POST["feelings"];?>">
 
 <title>送信内容の確認</title>
 

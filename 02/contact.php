@@ -23,13 +23,14 @@
     if( !empty($_POST["mail"])) {$mail = $_POST["mail"];}
     $domain="";
     if( !empty($_POST["domain"])) {$domain = $_POST["domain"];}
-
+    $feelings="";
+    if( !empty($_POST["feelings"])) {$feelings = $_POST["feelings"];}
       ?>
 
     <title>お問い合わせ</title>
 
     <center>
-    <font size="6">お問い合わせフォーム</font>
+    <font size="6"><i><b><h1 class="press">お問い合わせフォーム</h1></b></i></font>
     </center>
 
 
@@ -62,8 +63,8 @@
 </tr>
 <tr>
         <th>メールアドレス   <font size="2" color="#ff0000"><b>[必須]</b></th>
-        <td><input size="20" type="text" name="mail" required aria-required="true" value="<?php echo $mail;?>">
-             @<input size="15" type="text" name="domain"required aria-required="true" value="<?php echo $domain;?>"></td>
+        <td><input size="20" type="text" name="mail" placeholder="R-Amuro" value="<?php echo $mail;?>">
+             @<input size="15" type="text" name="domain" placeholder="gundam.co.jp" value="<?php echo $domain;?>"></td>
 </tr>
 <tr>
         <th>どこで知ったか　</th>
@@ -85,7 +86,7 @@
 </tr>
 <tr>
         <th>質問内容　</th>
-        <td align="center"><textarea name="feelings" rows="5" cols="20"></textarea></td>
+        <td align="center"><textarea name="feelings" placeholder="やってみなければわからん！" rows="5" cols="20" value="<?php echo $mail;?>"></textarea></td>
 </tr>
 
 </table>

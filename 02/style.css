@@ -25,6 +25,12 @@ table.formTable th{
 .name1{
 	width:400px; /*出力枠固定*/
 }
+.press { /*タイトル文字装飾*/
+  color: transparent;/*インラインフレームの背景を透過*/
+  background-color : black;
+  text-shadow : rgba(255,255,255,0.5) 1px 5px 6px, rgba(255,255,255,0.2) 1px 3px 3px; /*RGBAカラーモデルで色を指定する*/
+-webkit-background-clip : text;
+}
 textarea{
 	width:400px;
 	height:150px;
