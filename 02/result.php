@@ -14,11 +14,13 @@
 <input type="hidden" name="number2" value="<?php echo $_POST["number2"];?>">
 <input type="hidden" name="number3" value="<?php echo $_POST["number3"];?>">
 <input type="hidden" name="mail" value="<?php echo $_POST["mail"];?>">
-<input type="hidden" name="domain" value="<?php echo $_POST["domain"];?>">
-<input type="hidden" name="feelings" value="<?php echo $_POST["feelings"];?>">
+<input type="hidden" name="domain" value="<?php echo $_POST["domain"];?>">ｓ
 
 <title>送信内容の確認</title>
 
+<center>
+<font size="6"><i><b><h1 class="press">入力データ確認画面</h1></b></i></font>
+</center>
 
 <tr>
     <th>名前　：</th>
@@ -69,9 +71,12 @@
     <?php echo $_POST["feelings"]."<br>";?>
     </td>
 </tr>
-    <center>
-    <input type="submit" value="　　戻る　　"></center>
 
 </table>
+
+        <p align="center">
+        <input type="submit" value="　　戻る　　">
+        </p>
+
 </body>
 </html>

@@ -23,8 +23,7 @@
     if( !empty($_POST["mail"])) {$mail = $_POST["mail"];}
     $domain="";
     if( !empty($_POST["domain"])) {$domain = $_POST["domain"];}
-    $feelings="";
-    if( !empty($_POST["feelings"])) {$feelings = $_POST["feelings"];}
+
       ?>
 
     <title>お問い合わせ</title>
@@ -37,7 +36,7 @@
     <table class="formTable">
 <tr>
         <th>姓   <font size="2" color="#ff0000"><b>[必須]</b></th>
-<!--echo表示　required」属性が記述されている入力要素では、空欄のままフォームの [送信] ボタンが押された場合、(一部のブラウザで) エラーメッセージを出すことができる。-->
+<!--echo表示　required」属性が記述されている入力要素では、空欄のままフォームの [送信] ボタンが押された場合、エラーメッセージを出す。-->
         <td><input type="text" name="name1" size="20"  placeholder="アムロ" value="<?php echo $name1;?>" required aria-required="true" ></td> <!--echo表示-->
 </tr>
 <!-- plamceholder 入力ボックスの初期値として薄いグレーの文字を表示する-->
@@ -86,13 +85,14 @@
 </tr>
 <tr>
         <th>質問内容　</th>
-        <td align="center"><textarea name="feelings" placeholder="やってみなければわからん！" rows="5" cols="20" value="<?php echo $mail;?>"></textarea></td>
+        <td align="center"><textarea name="feelings" placeholder="やってみなければわからん！" rows="5" cols="20"></textarea></td>
 </tr>
 
 </table>
         <p align="center">
             <button class="button1" type="submit">  送信  </button>
-            <button class="button2" type="reset">  リセット  </button>
+
+            <button class="button2" type="reset">   リセット  </button>
         </p>
 
 </form>
