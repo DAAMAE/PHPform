@@ -27,8 +27,8 @@ table.formTable th{
 }
 .press { /*タイトル文字装飾*/
   color: transparent;/*インラインフレームの背景を透過*/
-  background-color : black;
-  text-shadow : rgba(255,255,255,0.5) 1px 5px 6px, rgba(255,255,255,0.2) 1px 3px 3px; /*RGBAカラーモデルで色を指定する*/
+  background-color : purple;
+  text-shadow : rgba(255,255,255,0.5) 1px 5px 5px; /*RGBAカラーモデルで色を指定する*/
 -webkit-background-clip : text;
 }
 textarea{
@@ -45,6 +45,8 @@ button.button1 {
 	font-size: 1.4em;/* 文字サイズを1.4emに指定 */
     font-weight: bold;/* 文字の太さをboldに指定 */
     padding: 7px 50px;/* 縦方向に10px、横方向に30pxの余白を指定 */
+	position: relative;
+	left:30px;
 
     color: #fff;/* 文字色を白色に指定 */
 
@@ -70,7 +72,9 @@ button.button1:hover {
 button.button2 {
 	font-size: 0.8em;
     font-weight: bold;
-    padding: 5px 1s0px;
+    padding: 5px 10px;
+	position: relative;
+	left: 200px;
 
     color: #fff;
 
@@ -88,7 +92,10 @@ button.button2 {
     -moz-border-radius: 15px;
     -webkit-border-radius: 15px;
     border-radius: 15px;
+
+
 }
+
 button.button2:hover {
     /* 透明度を20%に指定 */
     opacity: 0.8;

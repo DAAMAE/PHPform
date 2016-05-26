@@ -55,12 +55,12 @@
 </tr>
 <tr>
         <th>性別   </th>
-        <td><input type="radio" name="sex" value="男性"
-            <?php if($sex == "男性"){echo "checked";} ?> /> 男性　
-            <input type="radio" name="sex" value="女性"
-            <?php if($sex == "女性"){echo "checked";} ?>  /> 女性
-            <input type="radio" name="sex" value="不明"
-            <?php if($sex == "不明"){echo "checked";} ?>  />　不明 </td>
+        <td><label><input type="radio" name="sex" value="男性"
+            <?php if($sex == "男性"){echo "checked";} ?> /> 男性</label>　
+            <label><input type="radio" name="sex" value="女性"
+            <?php if($sex == "女性"){echo "checked";} ?>  /> 女性</label>
+            <label><input type="radio" name="sex" value="不明"
+            <?php if($sex == "不明"){echo "checked";} ?>  />　不明</label> </td>
 </tr>
 <tr>
         <th>住所   <font size="2" color="#ff0000"><b>[必須]</b></th>
@@ -79,19 +79,19 @@
 </tr>
 <tr>
         <th>どこで知ったか　</th>
-        <td><input type="radio" value="雑誌・広告" name="point">雑誌・広告
-            <input type="radio" value="ネット" name="point">ネット
-            <input type="radio" value="友人・家族" name="point">友人・家族
-            <input type="radio" value="その他" name="point">その他</td>
+        <td><label><input type="radio" value="雑誌・広告" name="point">雑誌・広告</label>
+            <label><input type="radio" value="ネット" name="point">ネット</label>
+            <label><input type="radio" value="友人・家族" name="point">友人・家族</label>
+            <label><input type="radio" value="その他" name="point">その他</label></td>
 </tr>
 <tr>
         <th>質問カテゴリ　</th>
         <td><select name="question">
-            <option value="課題について">課題について</option>
-            <option value="日報の書き方">日報の書き方</option>
-            <option value="メールの書き方">メールの書き方</option>
-            <option value="趣味">趣味</option>
-            <option value="最近熱いアニメ">最近熱いアニメ</option>
+            <option value="地球連邦について">地球連邦について</option>
+            <option value="ネオジオンについて">ネオジオンについて</option>
+            <option value="ニュータイプについて">ニュータイプについて</option>
+            <option value="ライバル">ライバル</option>
+            <option value="髪型について">髪型について</option>
         </select>
         </td>
 </tr>
