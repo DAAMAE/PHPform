@@ -18,7 +18,7 @@
 <input type="hidden" name="number2" value="<?php echo $_POST["number2"];?>">
 <input type="hidden" name="number3" value="<?php echo $_POST["number3"];?>">
 <input type="hidden" name="mail" value="<?php echo $_POST["mail"];?>">
-<input type="hidden" name="domain" value="<?php echo $_POST["domain"];?>">ｓ
+<input type="hidden" name="domain" value="<?php echo $_POST["domain"];?>">
 
 <title>送信内容の確認</title>
 
@@ -72,7 +72,19 @@
 <tr>
     <th>質問内容　：</th>
     <td>
-    <?php echo $_POST["feelings"]."<br>";?>
+        <?php
+    // 質問内容の値が入っているかチェック 改行対応
+    if($_POST['feelings'] !== ""){
+        echo nl2br(htmlspecialchars($_POST['feelings']) );
+    }else{
+        echo "
+          　　　　　／⌒　　⌒＼<br>
+　　　 ／（ ●） 　（●）＼<br>
+　　／::::::⌒（__人__）⌒:::::＼　　＜　書いて、どうぞ！<br>
+　　|　　　　　|r┬-|　　　　  |<br>
+　　＼ 　　 　 `ー'´ 　 　 ／
+    ";}
+                ?>
     </td>
 </tr>
 

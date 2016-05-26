@@ -103,8 +103,10 @@
 </table>
         <p align="center">
             <button class="button1" type="submit">  送信  </button>
-            <button class="button2" type="reset">   リセット  </button>
-        </p>
+            <button  class="button2" type="reset" onClick="location.href='http://localhost/PHPform/02/contact.php'">  リセット </button>
+            <!--強引の策 location.href="URL"指定したURLへジャンプする-->
+               </p>
+
 
 </form>
 </body>
