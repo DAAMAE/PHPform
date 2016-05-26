@@ -1,5 +1,8 @@
-<html>
+<!DOCTYPE html>
+<html lang="ja">
+
 <head>
+    <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="reset.css">
 </head>
@@ -9,6 +12,7 @@
 
 <input type="hidden" name="name1" value="<?php echo $_POST["name1"];?>">
 <input type="hidden" name="name2" value="<?php echo $_POST["name2"];?>">
+<input type="hidden" name="sex"　value="<?php echo $_POST["sex"]; ?>">
 <input type="hidden" name="Address" value="<?php echo $_POST["Address"];?>">
 <input type="hidden" name="number1" value="<?php echo $_POST["number1"];?>">
 <input type="hidden" name="number2" value="<?php echo $_POST["number2"];?>">
