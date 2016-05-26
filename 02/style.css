@@ -1,5 +1,5 @@
 
-formTable{
+#formTable{
 	width:600px;
 	margin:0 auto; /*サイト全体を中央配置*/
 	color:#555;
@@ -16,11 +16,12 @@ table.formTable td, table.formTable th{
 	padding:10px; /*パディングに関する指定をまとめて行う 領域内のｽﾍﾟｰｽ*/
 }
 table.formTable th{
-	width:500px;
+	width:150px;
 	font-weight:bold; /*フォント太さ(左側太字に変更)*/
 	background:#E4D7EA;
 	text-align:left; /* 行揃えの位置・均等割付を指定する 左*/
 	vertical-align: middle;	 /* 縦方向の揃え位置を指定する 中央寄せ」*/
+
 }
 .name1{
 	width:400px; /*出力枠固定*/
@@ -46,7 +47,7 @@ button.button1 {
     font-weight: bold;/* 文字の太さをboldに指定 */
     padding: 7px 50px;/* 縦方向に10px、横方向に30pxの余白を指定 */
 	position: relative;
-	left:30px;
+	left: 40px;
 
     color: #fff;/* 文字色を白色に指定 */
 
@@ -58,8 +59,8 @@ button.button1 {
 
     text-shadow: 1px 1px 2px #000;/* テキストの影の指定 影の横幅を1px 縦長を1px ぼかしを2px 色を#000（黒）に指定 */
     /* グラデーションの指定 */
-    background: -moz-linear-gradient(bottom, #36d, #248 50%, #36d);
-    background: -webkit-gradient(linear, left bottom, left top, from(#c3f), color-stop(0.5, #83d), to(#c3f));
+    background: bottom, #36d, #248 50%, #36d);
+    background: -webkit-gradient(linear, left bottom, left top, from(#c3f), color-stop(0.5, #83d), to(#c3f));/*http://www.css-lecture.com/log/css3/css3-gradient.html*/
     /* 角丸の指定 */
     -moz-border-radius: 15px;
     -webkit-border-radius: 15px;

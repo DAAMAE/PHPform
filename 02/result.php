@@ -37,6 +37,7 @@
     <th>性別　：</th>
     <td>
     <?php echo $_POST["sex"]."<br>";?>
+
     </td>
 </tr>
 <tr>

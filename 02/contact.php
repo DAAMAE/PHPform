@@ -56,11 +56,11 @@
 <tr>
         <th>性別   </th>
         <td><label><input type="radio" name="sex" value="男性"
-            <?php if($sex == "男性"){echo "checked";} ?> /> 男性</label>　
+             /> 男性</label>　
             <label><input type="radio" name="sex" value="女性"
-            <?php if($sex == "女性"){echo "checked";} ?>  /> 女性</label>
+             /> 女性</label>
             <label><input type="radio" name="sex" value="不明"
-            <?php if($sex == "不明"){echo "checked";} ?>  />　不明</label> </td>
+              />　不明</label> </td>
 </tr>
 <tr>
         <th>住所   <font size="2" color="#ff0000"><b>[必須]</b></th>
