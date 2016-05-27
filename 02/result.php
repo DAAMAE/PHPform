@@ -63,7 +63,26 @@
 <tr>
     <th>どこで知ったか　：</th>
     <td>
-    <?php echo $_POST["point"]."<br>";?>
+
+    <?php if(empty($_POST['where'])==false){
+            foreach ($_POST['where'] as $value) {
+                    switch (htmlspecialchars($value)) {
+                    case '1':
+                        echo "雑誌・広告";
+                        break;
+                    case '2':
+                        echo "ネット";
+                        break;
+                    case '3':
+                        echo "友人・家族";
+                        break;
+                    case '4':
+                        echo "その他";
+                        break;
+                }
+            }
+        }
+                  ?>
     </td>
 </tr>
 <tr>

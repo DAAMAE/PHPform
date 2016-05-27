@@ -79,10 +79,10 @@
 </tr>
 <tr>
         <th>どこで知ったか　</th>
-        <td><label><input type="radio" value="雑誌・広告" name="point">雑誌・広告</label>
-            <label><input type="radio" value="ネット" name="point">ネット</label>
-            <label><input type="radio" value="友人・家族" name="point">友人・家族</label>
-            <label><input type="radio" value="その他" name="point">その他</label></td>
+        <td><label><input type="radio" value="1" name="where[]" style="width">雑誌・広告</label>
+            <label><input type="radio" value="2" name="where[]" style="width">ネット</label>
+            <label><input type="radio" value="3" name="where[]" style="width">友人・家族</label>
+            <label><input type="radio" value="4" name="where[]" style="width">その他</label></td>
 </tr>
 <tr>
         <th>質問カテゴリ　</th>
