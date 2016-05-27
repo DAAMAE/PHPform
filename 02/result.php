@@ -36,7 +36,23 @@
 <tr>
     <th>性別　：</th>
     <td>
-    <?php echo $_POST["sex"]."<br>";?>
+    <?php if(empty($_POST['where'])==false){
+            foreach ($_POST['where'] as $value) {
+                    switch (htmlspecialchars($value)) {
+                    case 's1':
+                        echo "男性";
+                        break;
+                    case 's2':
+                        echo "女性";
+                        break;
+                    case 's3':
+                        echo "不明";
+                        break;
+
+                }
+            }
+        }
+                  ?>
 
     </td>
 </tr>

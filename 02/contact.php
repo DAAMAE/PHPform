@@ -55,12 +55,12 @@
 </tr>
 <tr>
         <th>性別   </th>
-        <td><label><input type="radio" name="sex" value="男性"
-             /> 男性</label>　
-            <label><input type="radio" name="sex" value="女性"
-             /> 女性</label>
-            <label><input type="radio" name="sex" value="不明"
-              />　不明</label> </td>
+        
+              <td><label><input type="radio" value="s1" name="where[]" style="width">男性</label>
+                  <label><input type="radio" value="s2" name="where[]" style="width">女性</label>
+                  <label><input type="radio" value="s3" name="where[]" style="width">不明</label>
+            </td>
+
 </tr>
 <tr>
         <th>住所   <font size="2" color="#ff0000"><b>[必須]</b></th>
