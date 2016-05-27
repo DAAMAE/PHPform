@@ -95,7 +95,8 @@
                     case '4':
                         echo "その他";
                         break;
-                }
+                }else{
+        echo "<font color=red>できれば選択オナシャス</font>";}
             }
         }
                   ?>
