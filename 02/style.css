@@ -6,6 +6,7 @@
 	line-height:800px; /* 行の高さを指定する*/
 	font-size:500px;
 }
+
 table.formTable{                /*formTable外枠全部*/
 	width:600px;
 	margin:0 auto;              /*左右等分のmarginが算出され、ボックスは中央に配置*/

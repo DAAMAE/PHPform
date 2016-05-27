@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="reset.css">
 </head>
-<body>
+<body background="./img/nijihaikei.jpg">
     <form action="result.php" method="post">
 
     <?php
@@ -49,12 +49,20 @@
         <th>名   <font size="2" color="#ff0000"><b>[必須]</b></th>
         <td><input type="text" name="name2" size="20" placeholder="レイ" value="<?php echo $name2;?>" required aria-required="true" ></td>
 </tr>
+<?php
+  // ラジオボタンの checked の状態を空にしておく
+      $rd = "男性";
+
+  // 空の否定判定、checked の状態を維持
+      if( !empty($_POST['rd']) ){$rd = $_POST['rd']; }
+   ?>
+
 <tr>
         <th>性別   </th>
 
-              <td><label><input type="radio" value="s1" name="rd[]" style="width">男性</label>
-                  <label><input type="radio" value="s2" name="rd[]" style="width">女性</label>
-                  <label><input type="radio" value="s3" name="rd[]" style="width">不明</label>
+              <td><label><input type="radio" value="男性" name="rd"  <?php if($rd == "男性"){echo "checked";} ?> >男性</label>
+                  <label><input type="radio" value="女性" name="rd" 　<?php if($rd == "女性"){echo "checked";} ?> >女性</label>
+                  <label><input type="radio" value="不明" name="rd" 　<?php if($rd == "不明"){echo "checked";} ?> >不明</label>
             </td>
 
 </tr>
@@ -74,23 +82,23 @@
              @<input size="15" type="text" name="domain" placeholder="gundam.co.jp" value="<?php echo $domain;?>"></td>
 </tr>
 <tr>
-        <th>どこで知ったか　</th>
+        <th>どこで知ったか　<br>(複数選択可)</th>
         <td><ul style="list-style:none;">
-            <li><label><input type="radio" value="1" name="where[]" style="width">雑誌・広告</label></li>
-            <li><label><input type="radio" value="2" name="where[]" style="width">ネット</label></li>
-            <li><label><input type="radio" value="3" name="where[]" style="width">友人・家族</label></li>
-            <li><label><input type="radio" value="4" name="where[]" style="width" onclick="connecttext('textforscb',this.checked);">その他</label>
-            <input type="text" name="othertext" id="textforscb" value=""></ul>
+            <li><label><input type="checkbox" value="1" name="where[]" style="width">雑誌・広告</label></li>
+            <li><label><input type="checkbox" value="2" name="where[]" style="width">ネット</label></li>
+            <li><label><input type="checkbox" value="3" name="where[]" style="width">友人・家族</label></li>
+            <li><label><input type="checkbox" value="4" name="where[]" style="width" onclick="connecttext('textforscb',this.checked);">その他</label>
+
         </td>
 </tr>
 <tr>
         <th>質問カテゴリ　</th>
         <td><select name="question">
-            <option value="地球連邦について">地球連邦について</option>
-            <option value="ネオジオンについて">ネオジオンについて</option>
-            <option value="ニュータイプについて">ニュータイプについて</option>
-            <option value="ライバル">ライバル</option>
-            <option value="髪型について">髪型について</option>
+            <option value="メールの書き方">メールの書き方</option>
+            <option value="日報の書き方">日報の書き方</option>
+            <option value="料金について">料金について</option>
+            <option value="お手続きについて">お手続きについて</option>
+            <option value="サービス利用について">サービス利用について</option>
         </select>
         </td>
 </tr>

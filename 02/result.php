@@ -6,9 +6,10 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="reset.css">
 </head>
-<body>
+<body background="./img/nijihaikei.jpg">
     <form action="contact.php" method="post">
     <table class="formTable">
+
 
 <input type="hidden" name="name1" value="<?php echo $_POST["name1"];?>">
 <input type="hidden" name="name2" value="<?php echo $_POST["name2"];?>">
@@ -30,32 +31,20 @@
     <th>名前　：</th>
     <td class="name1">
 
-    <?php echo $_POST["name1"] .  " " . $_POST["name2"]."<br>";?>
+    <?php
+     echo $_POST["name1"] .  " " . $_POST["name2"]."<br>";?>
     </td>
 </tr>
 <tr>
     <th>性別　：</th>
     <td>
-    <?php if(empty($_POST['rd'])==false){
-            foreach ($_POST['rd'] as $value) {
-                    switch (htmlspecialchars($value)) {
-                    case 's1':
-                        echo "男性";
-                        break;
-                    case 's2':
-                        echo "女性";
-                        break;
-                    case 's3':
-                        echo "不明";
-                        break;
-
-                }
-            }
+    <?php if(empty($_POST['rd'])==false ){
+            echo $_POST['rd'];
         }else{
-            echo "オカマですか？";
+        echo "選択オナシャス！";
         }
-                  ?>
-
+    ?>
+        <input type="hidden" name="rd" value="<?php echo $_POST['rd']; ?>">
     </td>
 </tr>
 <tr>
@@ -100,10 +89,9 @@
                 }
             }
         }else{
-            echo "できれば選択オナシャス！";
+            echo "選択オナシャス！";
         }
                   ?>
-                  <input type="text">
     </td>
 </tr>
 <tr>
