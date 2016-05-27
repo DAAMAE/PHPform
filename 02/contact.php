@@ -52,9 +52,9 @@
 <tr>
         <th>性別   </th>
 
-              <td><label><input type="radio" value="s1" name="where[]" style="width">男性</label>
-                  <label><input type="radio" value="s2" name="where[]" style="width">女性</label>
-                  <label><input type="radio" value="s3" name="where[]" style="width">不明</label>
+              <td><label><input type="radio" value="s1" name="rd[]" style="width">男性</label>
+                  <label><input type="radio" value="s2" name="rd[]" style="width">女性</label>
+                  <label><input type="radio" value="s3" name="rd[]" style="width">不明</label>
             </td>
 
 </tr>
@@ -75,10 +75,13 @@
 </tr>
 <tr>
         <th>どこで知ったか　</th>
-        <td><label><input type="radio" value="1" name="where[]" style="width">雑誌・広告</label>
-            <label><input type="radio" value="2" name="where[]" style="width">ネット</label>
-            <label><input type="radio" value="3" name="where[]" style="width">友人・家族</label>
-            <label><input type="radio" value="4" name="where[]" style="width">その他</label></td>
+        <td><ul style="list-style:none;">
+            <li><label><input type="radio" value="1" name="where[]" style="width">雑誌・広告</label></li>
+            <li><label><input type="radio" value="2" name="where[]" style="width">ネット</label></li>
+            <li><label><input type="radio" value="3" name="where[]" style="width">友人・家族</label></li>
+            <li><label><input type="radio" value="4" name="where[]" style="width" onclick="connecttext('textforscb',this.checked);">その他</label>
+            <input type="text" name="othertext" id="textforscb" value=""></ul>
+        </td>
 </tr>
 <tr>
         <th>質問カテゴリ　</th>

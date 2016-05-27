@@ -36,8 +36,8 @@
 <tr>
     <th>性別　：</th>
     <td>
-    <?php if(empty($_POST['where'])==false){
-            foreach ($_POST['where'] as $value) {
+    <?php if(empty($_POST['rd'])==false){
+            foreach ($_POST['rd'] as $value) {
                     switch (htmlspecialchars($value)) {
                     case 's1':
                         echo "男性";
@@ -51,6 +51,8 @@
 
                 }
             }
+        }else{
+            echo "オカマですか？";
         }
                   ?>
 
@@ -95,11 +97,13 @@
                     case '4':
                         echo "その他";
                         break;
-                }else{
-        echo "<font color=red>できれば選択オナシャス</font>";}
+                }
             }
+        }else{
+            echo "できれば選択オナシャス！";
         }
                   ?>
+                  <input type="text">
     </td>
 </tr>
 <tr>
