@@ -43,6 +43,7 @@ table.formTable {
     background: #EDEDED; /*背景色*/
 }
 button.button1 {
+	font-size: 1.5em;/* 文字サイズを1.4emに指定 */
 	font-size: 1.8em;/* 文字サイズを1.8emに指定 */
     font-weight: bold;/* 文字の太さをboldに指定 */
     padding: 7px 50px;/* 縦方向に10px、横方向に30pxの余白を指定 */

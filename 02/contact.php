@@ -14,14 +14,10 @@
     if( !empty($_POST["name1"])) {$name1 = $_POST["name1"];}/*name1初期化　$_POSTが空でない時に$_POST name1値を代入*/
     $name2="";
     if( !empty($_POST["name2"])) {$name2 = $_POST["name2"];}
-
     $sex = "";
     if( !empty($_POST["sex"]) ){$rd = $_POST["sex"]; }
-
-
     $Address="";
     if( !empty($_POST["Address"])) {$Address = $_POST["Address"];}
-
     $number1="";
     if( !empty($_POST["number1"])) {$number1 = $_POST["number1"];}
     $number2="";
@@ -55,7 +51,7 @@
 </tr>
 <tr>
         <th>性別   </th>
-        
+
               <td><label><input type="radio" value="s1" name="where[]" style="width">男性</label>
                   <label><input type="radio" value="s2" name="where[]" style="width">女性</label>
                   <label><input type="radio" value="s3" name="where[]" style="width">不明</label>
