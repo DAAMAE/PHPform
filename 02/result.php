@@ -49,7 +49,9 @@
 <tr>
     <th>電話番号　：</th>
     <td>
-    <?php echo $_POST["number1"] ."-" . $_POST["number2"]. "-". $_POST["number3"]."<br>";?>
+    <?php echo $_POST["number1"] ."-" . $_POST["number2"]. "-". $_POST["number3"]."<br>";
+
+    ?>
     </td>
 </tr>
 <tr>
@@ -76,7 +78,8 @@
         <?php
     // 質問内容の値が入っているかチェック 改行対応
     if($_POST['feelings'] !== ""){
-        echo nl2br(htmlspecialchars($_POST['feelings']) );
+        echo nl2br(htmlspecialchars($_POST['feelings']) );/* 改行文字の前に HTML の改行タグを挿入する */
+        /*特殊文字を HTML エンティティに変換する*/
     }else{
         echo "
           　　　　　／⌒　　⌒＼<br>
